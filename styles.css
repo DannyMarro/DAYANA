@@ -10,10 +10,18 @@ header {
     background-color: #8B0033; /* Rosado oscuro */
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
-    color: #F5F5F5; /* Blanco grisáceo */
+header .logo h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+header .logo img {
+    width: 50px; /* Tamaño del logo */
 }
 
 nav ul {
@@ -27,54 +35,51 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #F5F5F5; /* Blanco grisáceo */
+    color: white;
     text-decoration: none;
 }
 
-.carousel {
-    display: flex;
-    overflow-x: auto;
+#destacados {
     padding: 20px;
+    text-align: center;
 }
 
-.carousel img {
-    margin-right: 10px;
-    transition: transform 0.3s;
-    height: 200px; /* Ajustar altura */
+.pelicula-destacada {
+    display: inline-block;
+    text-align: center;
 }
 
-.carousel img:hover {
-    transform: scale(1.1);
-}
-
-section {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #3A3A3A; /* Borde gris más oscuro */
-    border-radius: 8px;
-    background-color: #3D3D3D; /* Fondo gris oscuro para secciones */
-}
-
-.categoria {
-    margin-bottom: 20px;
-}
-
-.pelicula img {
-    width: 100%; /* Ajustar ancho */
-    border-radius: 8px;
+.pelicula-destacada img {
+    width: 300px;
+    border-radius: 10px;
 }
 
 button {
     background-color: #8B0033; /* Rosado oscuro */
     color: #F5F5F5;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
 }
 
 button:hover {
     background-color: #73002A; /* Rosado más oscuro */
+}
+
+#categorias {
+    padding: 20px;
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.categoria img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 footer {
@@ -84,7 +89,6 @@ footer {
     color: #F5F5F5;
 }
 
-/* Estilos para el modal */
 .modal {
     display: none;
     position: fixed;
@@ -115,7 +119,7 @@ footer {
     position: absolute;
     top: 10px;
     right: 20px;
-    color: #F5F5F5; /* Blanco grisáceo */
+    color: #F5F5F5;
     font-size: 30px;
     cursor: pointer;
 }
