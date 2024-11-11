@@ -1,19 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #F7B2C1;
-    color: #333333;
+    background-color: #2C2C2C; /* Fondo gris oscuro */
+    color: #F5F5F5; /* Texto gris claro */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #D7006D;
+    background-color: #8B0033; /* Rosado oscuro */
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    color: white;
+    color: #F5F5F5; /* Blanco grisáceo */
 }
 
 nav ul {
@@ -27,7 +27,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #F5F5F5; /* Blanco grisáceo */
     text-decoration: none;
 }
 
@@ -50,8 +50,9 @@ nav ul li a {
 section {
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid #EAEAEA;
+    border: 1px solid #3A3A3A; /* Borde gris más oscuro */
     border-radius: 8px;
+    background-color: #3D3D3D; /* Fondo gris oscuro para secciones */
 }
 
 .categoria {
@@ -64,8 +65,8 @@ section {
 }
 
 button {
-    background-color: #D7006D;
-    color: white;
+    background-color: #8B0033; /* Rosado oscuro */
+    color: #F5F5F5;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -73,14 +74,14 @@ button {
 }
 
 button:hover {
-    background-color: #C6005C;
+    background-color: #73002A; /* Rosado más oscuro */
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #D7006D;
-    color: white;
+    background-color: #8B0033; /* Rosado oscuro */
+    color: #F5F5F5;
 }
 
 /* Estilos para el modal */
@@ -92,7 +93,7 @@ footer {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(44, 44, 44, 0.8); /* Fondo semi-transparente gris oscuro */
 }
 
 .modal-content {
@@ -101,6 +102,7 @@ footer {
     padding: 20px;
     width: 80%;
     max-width: 700px;
+    background-color: #3D3D3D; /* Fondo gris oscuro */
 }
 
 .modal-content iframe {
@@ -113,7 +115,7 @@ footer {
     position: absolute;
     top: 10px;
     right: 20px;
-    color: white;
+    color: #F5F5F5; /* Blanco grisáceo */
     font-size: 30px;
     cursor: pointer;
 }
